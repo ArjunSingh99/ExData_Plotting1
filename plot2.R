@@ -1,6 +1,6 @@
 #Reading the data
 myPath <- "household_power_consumption.txt" #This is the path
-myData <- read.table(mypath, header = TRUE, stringsAsFactors = FALSE, sep = ';') #Reading the data
+myData <- read.table(myPath, header = TRUE, stringsAsFactors = FALSE, sep = ';') #Reading the data
 myData <- myData[myData$Date == "1/2/2007" | myData$Date == "2/2/2007",] #Subsetting the required data
 
 #Plot
